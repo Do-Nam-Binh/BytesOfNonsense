@@ -8,9 +8,6 @@
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - **AI-Generated Fake News**: Uses the ChatGPT API to generate articles based on scraped real-world headlines.
