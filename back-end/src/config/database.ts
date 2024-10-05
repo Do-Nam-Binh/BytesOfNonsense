@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 dotenv.config()
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = `mongodb+srv://donambinh2002:${process.env.MONGODB_PASSWORD}@news.s0vit.mongodb.net/?retryWrites=true&w=majority&appName=News`;
+const uri = process.env.MONGODB_URI
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
