@@ -12,15 +12,11 @@
 - [Contributing](#contributing)
 - [License](#license)
 
----
-
 ## Features
 - **AI-Generated Fake News**: Uses the ChatGPT API to generate articles based on scraped real-world headlines.
 - **Real-time Headline Scraping**: Scrapes news titles from the internet to generate new fake articles.
 - **Responsive Frontend**: A React-based responsive interface for viewing fake articles.
 - **Backend API**: A Node.js and Express API with MongoDB for managing articles.
-
----
 
 ## Tech Stack
 - **Frontend**: React, TypeScript, CSS
@@ -28,8 +24,6 @@
 - **Database**: MongoDB (Mongoose)
 - **AI Integration**: OpenAI ChatGPT API
 - **Web Scraping**: [Cheerio](https://www.npmjs.com/package/cheerio) (or any preferred web scraping library)
-
----
 
 ## Installation
 
@@ -58,8 +52,6 @@
 
 3. **Set up environment variables**:  
    Create a `.env` file in both the `back-end` and `front-end` directories and configure the following variables.
-
----
 
 ## Environment Variables
 
