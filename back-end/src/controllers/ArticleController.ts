@@ -15,21 +15,27 @@ export const getArticles = async (req: Request, res: Response) => {
   }
 };
 
-//Get articles by id
+// Get articles by id
 export const getArticlesById = async (req: Request, res: Response) => {
   try {
     const article = await Article.findById(req.params.id);
     if (!article) {
-      return res.status(404).json({ message: "Article not found" });
+      res.status(404).json({ message: "Article not found" });
     }
-    return res.status(200).json(article);
+    res.status(200).json(article);
   } catch (error) {
     console.error(error);
-    return res
+    res
       .status(500)
       .json({ message: "An error occurred while fetching the article." });
   }
 };
+
+// export const getArticlesById = async (req: Request, res: Response) => {
+//     const article = await Article.findById(req.params.id);
+
+//   res.send(`Article ID: ${req.params.id}`);
+// };
 
 //Create news articles
 export const createArticle = async (req: Request, res: Response) => {

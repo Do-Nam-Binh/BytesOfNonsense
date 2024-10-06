@@ -8,7 +8,7 @@ import {
 const router = Router();
 
 router.get("/", getArticles);
-// router.get("/:id", getArticlesById);
+router.get("/:id", getArticlesById);
 router.post("/", createArticle);
 
 export default router;
